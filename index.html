@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Dólar a Pesos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h2>Calculadora Dólar a Pesos</h2>
+            
+            <div class="cotizacion">
+                <strong>Cotización del Dólar:</strong> <span id="cotizacion">Cargando...</span>
+            </div>
+
+            <input type="number" id="monto" placeholder="Ingrese monto en USD" oninput="calcular()">
+
+            <div class="resultado" id="resultado">$ 0.00</div>
+            
+            <p class="info">* Este cálculo incluye el 21% del IVA (único impuesto aplicable en moneda extranjera).</p>
+            <p class="info">* Para evitar impuestos en las compras en dólares de, por ejemplo, videojuegos se recomiendan billeteras virtuales como BELO o pagar con dólar MEP.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
